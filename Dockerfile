@@ -1,4 +1,4 @@
-FROM openjdk:21-jdk-slim
+FROM eclipse-temurin:21
 WORKDIR /app
-COPY target/*.jar app.jar
-ENTRYPOINT ["java", "-jar", "app.jar"]
+COPY target/api-0.0.1-SNAPSHOT.jar devopsdocker.jar
+ENTRYPOINT ["java", "-jar", "devopsdocker.jar"]
