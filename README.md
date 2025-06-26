@@ -29,5 +29,5 @@ API simples construída com Java e Spring Boot, focada em aplicar conceitos de D
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/devops-pipeline-api-java.git
+git clone https://github.com/TatsuXV/devops-pipeline-api-java.git
 cd devops-pipeline-api-java/api
