@@ -1,0 +1,30 @@
+name: CI - build/test/docker
+
+on:
+  push:
+    branches: [ "Main" ]
+    pull_request:
+      branches: [ "Main" ]
+
+jobs:
+  name: build e teste da api
+  runs-on: ubuntu-latest
+
+  steps:
+    - name: Checkout do código
+      uses: actions/checkout@v3
+
+    - name: Instalação do JDK 21
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin'
+        java-version: 21
+
+    - name: build com Maven
+      build: ./mvnw clean package
+
+    - name: Executar testes
+      run: ./mvnw test
+
+    - name: Build Docker Image
+      run: docker build -t devops-api .
