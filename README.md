@@ -23,11 +23,7 @@ API simples construída com Java e Spring Boot, focada em aplicar conceitos de D
 - GitHub Actions (CI/CD – em breve)
 
 ---
+# DevOps Pipeline API
+![CI](https://github.com/TatsuXV/devops-pipeline-api-java/actions/workflows/ci.yml/badge.svg?branch=main)
 
-## ▶️ Como rodar localmente
-
-### 1. Clone o repositório
-
-```bash
-git clone https://github.com/TatsuXV/devops-pipeline-api-java.git
-cd devops-pipeline-api-java/api
+----
